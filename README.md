@@ -17,7 +17,7 @@ This isn't an official project on drupal.org, so you have to do a little special
         {
             "type": "package",
             "package": {
-                "name": "ohthehugemanatee/drupal_sorted_configuration",
+                "name": "ohthehugemanatee/sorted_configuration",
                 "version": "8.x-1.x-dev",
                 "type": "drupal-module",
                 "source": {
@@ -29,7 +29,7 @@ This isn't an official project on drupal.org, so you have to do a little special
         }
 ```
 
-Then you can download it with `composer require ohthehugemanatee/drupal_sorted_configuration "8.x-1.x-dev"`. 
+Then you can download it with `composer require ohthehugemanatee/sorted_configuration "8.x-1.x-dev"`. 
 
 Once the module is downloaded, install it like any other Drupal module. Add an array of target configurations to sort in your settings.php. You can either specify specific config entities, or use a regular expression to select multiple. Any entry which starts and ends with a forward slash ('/') is read as a regex. 
 
