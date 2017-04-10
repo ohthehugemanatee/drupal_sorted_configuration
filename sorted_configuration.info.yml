@@ -1,7 +1,7 @@
-name: RAS Config
+name: Sorted Configuration
 type: module
-description: RAS custom behaviors for Drupal configuration
+description: Force Config Management to compare sorted, rather than unsorted, configs for diffs 
 core: 8.x
-package: RAS
+package: Other
 dependencies:
   - config_filter
