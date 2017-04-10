@@ -1,0 +1,7 @@
+name: RAS Config
+type: module
+description: RAS custom behaviors for Drupal configuration
+core: 8.x
+package: RAS
+dependencies:
+  - config_filter
