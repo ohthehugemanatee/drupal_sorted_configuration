@@ -1,0 +1,11 @@
+{
+  "name": "drupal/drupal_sorted_configuration",
+  "type": "drupal-module",
+  "description": "Force Config Management to compare sorted, rather than unsorted, configs for diffs ",
+  "homepage": "https://github.com/ohthehugemanatee/drupal_sorted_configuration",
+  "license": "GPL-2.0+",
+  "require": {
+    "drupal/core": "~8"
+  },
+  "minimum-stability": "dev"
+}
