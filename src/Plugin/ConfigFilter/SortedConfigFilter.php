@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ras_config\plugin\ConfigFilter;
+namespace Drupal\sorted_configuration\plugin\ConfigFilter;
 
 use Drupal\config_filter\Plugin\ConfigFilterBase;
 use Drupal\Core\Config\StorageInterface;
@@ -55,7 +55,7 @@ class SortedConfigFilter extends ConfigFilterBase implements ContainerFactoryPlu
   public function __construct(array $configuration, $plugin_id, $plugin_definition, StorageInterface $storage) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->activeStorage = $storage;
-    $this->setTargetConfigs(Settings::get('ras_config_filter_targets', []));
+    $this->setTargetConfigs(Settings::get('sorted_configuration_targets', []));
   }
 
   /**

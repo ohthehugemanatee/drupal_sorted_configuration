@@ -1,11 +1,11 @@
 <?php
 
-namespace Drupal\ras_config\Tests;
+namespace Drupal\sorted_configuration\Tests;
 
 use Drupal\config_filter\Config\FilteredStorage;
 use Drupal\Core\Config\FileStorage;
 use Drupal\KernelTests\Core\Config\Storage\CachedStorageTest;
-use Drupal\ras_config\Plugin\ConfigFilter\SortedConfigFilter;
+use Drupal\sorted_configuration\Plugin\ConfigFilter\SortedConfigFilter;
 
 /**
  * Tests Config sorting
@@ -76,7 +76,7 @@ class SortedConfigFilterTest extends CachedStorageTest {
   }
 
   /**
-   * @covers \Drupal\ras_config\Plugin\ConfigFilter\SortedConfigFilter::filterRead
+   * @covers \Drupal\sorted_configuration\Plugin\ConfigFilter\SortedConfigFilter::filterRead
    */
   public function testFilterRead() {
     $this->assertNotEquals(serialize($this->testData), serialize($this->storage->read('test.not_matching')), 'Untargeted config is compared unsorted.');
@@ -86,7 +86,7 @@ class SortedConfigFilterTest extends CachedStorageTest {
 
 
   /**
-   * @covers \Drupal\ras_config\Plugin\ConfigFilter\SortedConfigFilter::filterReadMultiple
+   * @covers \Drupal\sorted_configuration\Plugin\ConfigFilter\SortedConfigFilter::filterReadMultiple
    */
   public function testFilterReadMultiple() {
     $expected_result = [
