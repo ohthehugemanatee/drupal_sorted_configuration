@@ -5,7 +5,8 @@
   "homepage": "https://github.com/ohthehugemanatee/drupal_sorted_configuration",
   "license": "GPL-2.0+",
   "require": {
-    "drupal/core": "~8"
+    "drupal/core": "~8",
+    "drupal/config_filter": "~8"
   },
   "minimum-stability": "dev"
 }
