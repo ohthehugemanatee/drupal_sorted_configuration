@@ -78,7 +78,7 @@ class SortedConfigFilter extends ConfigFilterBase implements ContainerFactoryPlu
    */
   public function filterRead($name, $data) {
     if ($this->isTargetConfig($name)) {
-      if ($this->activeStorage->exists($name)) {
+      if (!empty($data) && $this->activeStorage->exists($name)) {
         $active_data = $this->activeStorage->read($name);
         if (self::recursiveKsort($active_data) == self::recursiveKsort($data)) {
           return $active_data;
